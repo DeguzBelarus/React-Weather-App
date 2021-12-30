@@ -1,7 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Header.scss";
 
-const Header = ({ setCity }) => {
+const Header = ({
+  units,
+  currentPosAccessed,
+  setCity,
+  setUnits,
+  getWeather,
+  currentPositionGetWeather,
+}) => {
   const cityInput = useRef(null);
 
   const handleCity = (event) => {
@@ -11,6 +18,22 @@ const Header = ({ setCity }) => {
 
     cityInput.current.value = "";
   };
+
+  const handleUnits = () => {
+    if (units === "metric") {
+      setUnits("imperial");
+    } else {
+      setUnits("metric");
+    }
+  };
+
+  useEffect(() => {
+    if (currentPosAccessed) {
+      navigator.geolocation.getCurrentPosition(currentPositionGetWeather);
+    } else {
+      getWeather();
+    }
+  }, [units]);
   return (
     <header>
       <form className="cityinput-form" onSubmit={handleCity}>
@@ -24,6 +47,10 @@ const Header = ({ setCity }) => {
           Отправить
         </button>
       </form>
+      <div className="unitsChanger" onClick={handleUnits}>
+        <span className={`${units === "metric" && "bold"}`}>℃</span>/
+        <span className={`${units !== "metric" && "bold"}`}>℉</span>
+      </div>
     </header>
   );
 };

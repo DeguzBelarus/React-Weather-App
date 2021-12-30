@@ -6,17 +6,49 @@ header {
 
   .cityinput-form {
     #cityinput {
-      width: 220px;
-      height: 30px;
-  
+      width: 180px;
+      height: 34px;
+      box-sizing: border-box;
+
       &:focus {
         outline: none;
       }
     }
-  
+
     #city-submit-button {
       width: 75px;
       height: 34px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
+
+  .unitsChanger {
+    width: 45px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    box-sizing: border-box;
+    background: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
   }
 }
