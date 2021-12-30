@@ -1,0 +1,23 @@
+main {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  .city-name-paragraph {
+    color: white;
+
+    .city-name {
+      color: gold;
+    }
+  }
+
+  .city-temp-paragraph {
+    color: white;
+
+    .city-temp {
+      color: gold;
+    }
+  }
+}

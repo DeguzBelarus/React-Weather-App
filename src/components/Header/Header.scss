@@ -1,0 +1,22 @@
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cityinput-form {
+    #cityinput {
+      width: 220px;
+      height: 30px;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    #city-submit-button {
+      width: 75px;
+      height: 34px;
+    }
+  }
+}
