@@ -27,6 +27,20 @@ const Main = ({ weather, units }) => {
           {weather?.main?.temp ? ` ${weather.main.temp} ${measurement}` : ``}
         </span>
       </p>
+      <p className="additionalinfo-paragraph">
+        Влажность:
+        <span className="additional-info">
+          {weather?.main?.humidity ? ` ${weather.main.humidity}%` : ``}
+        </span>
+      </p>
+      <p className="additionalinfo-paragraph">
+        Описание:
+        <span className="additional-info">
+          {weather?.weather[0]?.description
+            ? ` ${weather.weather[0].description}`
+            : ``}
+        </span>
+      </p>
     </main>
   );
 };
