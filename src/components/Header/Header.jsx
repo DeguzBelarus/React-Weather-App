@@ -13,6 +13,7 @@ const Header = ({
 
   const handleCity = (event) => {
     event.preventDefault();
+    if (!cityInput.current.value) return;
 
     setCity(cityInput.current.value);
 
