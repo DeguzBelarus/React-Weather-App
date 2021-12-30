@@ -18,7 +18,7 @@ const Main = ({ weather, units }) => {
       <p className="city-name-paragraph">
         Город:
         <span className="city-name">
-          {weather?.name ? ` ${weather.name}` : ``}
+          {weather?.name ? ` ${weather.name}` : ` Город не выбран`}
         </span>
       </p>
       <p className="city-temp-paragraph">
