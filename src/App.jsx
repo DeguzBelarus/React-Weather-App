@@ -58,7 +58,13 @@ function App() {
         currentPositionGetWeather={currentPositionGetWeather}
         currentPosAccessed={currentPosAccessed}
       />
-      <Main weather={weather} units={units} />
+      <Main
+        weather={weather}
+        units={units}
+        getWeather={getWeather}
+        currentPositionGetWeather={currentPositionGetWeather}
+        currentPosAccessed={currentPosAccessed}
+      />
     </div>
   );
 }

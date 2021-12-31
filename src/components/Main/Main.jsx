@@ -13,7 +13,13 @@ const days = [
   "Суббота",
 ];
 
-const Main = ({ weather, units }) => {
+const Main = ({
+  weather,
+  units,
+  currentPosAccessed,
+  getWeather,
+  currentPositionGetWeather,
+}) => {
   useEffect(() => {
     if (units === "metric") {
       measurement = "℃";
@@ -21,6 +27,14 @@ const Main = ({ weather, units }) => {
       measurement = "℉";
     }
   }, [units]);
+
+  const refreshWeather = () => {
+    if (currentPosAccessed) {
+      navigator.geolocation.getCurrentPosition(currentPositionGetWeather);
+    } else {
+      getWeather();
+    }
+  };
 
   return (
     <main>
@@ -64,6 +78,9 @@ const Main = ({ weather, units }) => {
             : ``}
         </span>
       </p>
+      <div className="refresh-button" onClick={refreshWeather}>
+        Обновить
+      </div>
     </main>
   );
 };
