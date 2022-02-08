@@ -5,46 +5,96 @@ main {
   justify-content: start;
   align-items: center;
 
-  .city-name-paragraph {
-    color: white;
+  .current-weather-container {
+    .city-name-paragraph {
+      color: white;
 
-    .city-name {
-      color: gold;
+      .city-name {
+        color: gold;
+      }
+    }
+
+    .city-temp-paragraph {
+      color: white;
+
+      .city-temp {
+        color: gold;
+      }
+    }
+
+    .additionalinfo-paragraph {
+      color: whitesmoke;
+      .additional-info {
+        color: gold;
+      }
+    }
+
+    .refresh-button {
+      width: 74px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      border: 1px solid white;
+      border-radius: 5px;
+      background: chocolate;
+      color: wheat;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
-  .city-temp-paragraph {
-    color: white;
-
-    .city-temp {
-      color: gold;
-    }
-  }
-
-  .additionalinfo-paragraph {
-    color: whitesmoke;
-    .additional-info {
-      color: gold;
-    }
-  }
-
-  .refresh-button {
-    width: 74px;
-    height: 25px;
+  .dayly-weather-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    border: 1px solid white;
-    border-radius: 5px;
-    background: chocolate;
-    color: wheat;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+    margin-top: 15px;
+    gap: 10px;
 
-    &:hover {
-      cursor: pointer;
+    .dayly-weather-item {
+      width: 12.5%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      border: 1px solid black;
+      background: white;
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+      }
+
+      .temp {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .day-temp {
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+
+        .night-temp {
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "./Header.scss";
 
 const Header = ({
@@ -35,6 +35,7 @@ const Header = ({
       getWeather();
     }
   }, [units]);
+
   return (
     <header>
       <form className="cityinput-form" onSubmit={handleCity}>

@@ -1,4 +1,3 @@
-import "./App.scss";
 import { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -11,11 +10,12 @@ function App() {
   const [currentPosAccessed, setcurrentPosAccessed] = useState(true);
 
   const [weather, setWeather] = useState(null);
+  const [daylyWeather, setDaylyWeather] = useState(null);
 
   const currentPositionGetWeather = (position) => {
     setcurrentPosAccessed(true);
-    let coords = position.coords;
 
+    let coords = position.coords;
     let latitude = coords.latitude;
     let longitude = coords.longitude;
 
@@ -29,27 +29,47 @@ function App() {
       });
   };
 
-  const getWeather = () => {
+  const getWeather = async () => {
     setcurrentPosAccessed(false);
-    fetch(
+
+    await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appId}&units=${units}&lang=${lang}`
     )
       .then((response) => response.json())
       .then((json) => {
         setWeather(json);
+        console.log(json);
       });
   };
 
   useEffect(() => {
-    if (weather == null) {
+    if (!weather) {
       navigator.geolocation.getCurrentPosition(currentPositionGetWeather);
     } else {
       getWeather();
     }
   }, [city]);
 
+  useEffect(() => {
+    if (!weather) return;
+
+    const latitude = weather.coord?.lat;
+    const longitude = weather.coord?.lon;
+
+    if (latitude && longitude) {
+      fetch(
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly,alerts,current&appid=${appId}&units=${units}&lang=${lang}`
+      )
+        .then((response) => response.json())
+        .then((json) => {
+          setDaylyWeather(json);
+          console.log(json);
+        });
+    }
+  }, [weather]);
+
   return (
-    <div className="App">
+    <div className="weather-wrapper">
       <Header
         setCity={setCity}
         units={units}
@@ -60,6 +80,7 @@ function App() {
       />
       <Main
         weather={weather}
+        daylyWeather={daylyWeather}
         units={units}
         getWeather={getWeather}
         currentPositionGetWeather={currentPositionGetWeather}
