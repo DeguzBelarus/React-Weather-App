@@ -10,7 +10,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #424242;
+    background-color: #e0e0e0;
 
     .current-weather-icon {
       -ms-user-select: none;
@@ -19,25 +19,33 @@ main {
     }
 
     .city-name-paragraph {
-      color: white;
+      font-weight: bolder;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
 
       .city-name {
-        color: gold;
+        color: #ff3d00;
       }
     }
 
     .city-temp-paragraph {
-      color: white;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
 
       .city-temp {
-        color: gold;
+        color: #ff3d00;
       }
     }
 
     .additionalinfo-paragraph {
-      color: whitesmoke;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+
       .additional-info {
-        color: gold;
+        color: #ff3d00;
       }
     }
 
