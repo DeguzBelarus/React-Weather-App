@@ -39,6 +39,13 @@ const Main = ({
   return (
     <main>
       <div className="current-weather-container">
+        {weather?.main && (
+          <img
+            src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`}
+            alt="current weather icon"
+          />
+        )}
+
         <p className="city-name-paragraph">
           Город:
           <span className="city-name">
@@ -97,6 +104,13 @@ const Main = ({
                             .slice(0, 10)}`
                         : ""}
                     </div>
+                    {weather?.main && (
+                      <img
+                        className="weather-icon"
+                        src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}
+                        alt="weather icon"
+                      />
+                    )}
                     <div className="temp">
                       <p className="day-temp">
                         {weather?.main

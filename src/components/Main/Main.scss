@@ -67,7 +67,7 @@ main {
 
     .dayly-weather-item {
       width: 12.5%;
-      height: 130px;
+      height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -77,6 +77,12 @@ main {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       background: white;
+
+      &:first-child {
+        .date {
+          background-color: sandybrown;
+        }
+      }
 
       .date {
         width: 100%;
@@ -89,6 +95,10 @@ main {
         box-sizing: border-box;
         border-bottom: 1px solid black;
         background: #eee;
+      }
+
+      .weather-icon {
+        width: 30%;
       }
 
       .temp {
