@@ -1,5 +1,4 @@
 main {
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -11,7 +10,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: steelblue;
+    background-color: #424242;
 
     .current-weather-icon {
       -ms-user-select: none;
@@ -86,7 +85,7 @@ main {
 
       &:first-child {
         .date {
-          background-color: sandybrown;
+          background-color: #ff1744;
         }
       }
 
@@ -104,7 +103,7 @@ main {
       }
 
       .weather-icon {
-        width: 30%;
+        width: 25%;
         -ms-user-select: none;
         -webkit-user-select: none;
         user-select: none;
