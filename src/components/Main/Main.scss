@@ -67,9 +67,10 @@ main {
 
     .dayly-weather-item {
       width: 12.5%;
+      height: 130px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       box-sizing: border-box;
       border: 1px solid black;
@@ -114,6 +115,14 @@ main {
         -ms-user-select: none;
         -webkit-user-select: none;
         user-select: none;
+      }
+
+      .description {
+        height: 20px;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        text-align: center;
       }
     }
   }

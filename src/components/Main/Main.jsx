@@ -112,6 +112,9 @@ const Main = ({
                     <p className="humidity">
                       {weather?.main ? `Влажность: ${day.humidity}%` : ""}
                     </p>
+                    <p className="description">
+                      {weather?.main ? `${day.weather[0].description}` : ""}
+                    </p>
                   </div>
                 );
               })
