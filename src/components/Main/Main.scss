@@ -11,6 +11,10 @@ main {
     justify-content: center;
     align-items: flex-start;
     background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     .current-weather-icon {
       -ms-user-select: none;
