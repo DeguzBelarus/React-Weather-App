@@ -6,6 +6,13 @@ main {
   align-items: center;
 
   .current-weather-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: steelblue;
+
     .city-name-paragraph {
       color: white;
 
@@ -62,6 +69,8 @@ main {
       width: 12.5%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       box-sizing: border-box;
       border: 1px solid black;
       border-bottom-left-radius: 10px;
@@ -69,6 +78,7 @@ main {
       background: white;
 
       .date {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,6 +96,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .day-temp {
           -ms-user-select: none;
           -webkit-user-select: none;
@@ -97,6 +108,12 @@ main {
           -webkit-user-select: none;
           user-select: none;
         }
+      }
+
+      .humidity {
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
       }
     }
   }

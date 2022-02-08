@@ -99,14 +99,19 @@ const Main = ({
                     </div>
                     <div className="temp">
                       <p className="day-temp">
-                        {weather?.main ? `${day.temp.day} ${measurement}` : ""}
+                        {weather?.main
+                          ? `День: ${day.temp.day} ${measurement}`
+                          : ""}
                       </p>
                       <p className="night-temp">
                         {weather?.main
-                          ? `${day.temp.night} ${measurement}`
+                          ? `Ночь: ${day.temp.night} ${measurement}`
                           : ""}
                       </p>
                     </div>
+                    <p className="humidity">
+                      {weather?.main ? `Влажность: ${day.humidity}%` : ""}
+                    </p>
                   </div>
                 );
               })
