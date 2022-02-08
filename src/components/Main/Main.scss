@@ -13,6 +13,12 @@ main {
     align-items: flex-start;
     background-color: steelblue;
 
+    .current-weather-icon {
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
     .city-name-paragraph {
       color: white;
 
@@ -99,6 +105,9 @@ main {
 
       .weather-icon {
         width: 30%;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
       }
 
       .temp {

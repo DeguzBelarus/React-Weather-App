@@ -41,6 +41,7 @@ const Main = ({
       <div className="current-weather-container">
         {weather?.main && (
           <img
+            className="current-weather-icon"
             src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`}
             alt="current weather icon"
           />
