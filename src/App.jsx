@@ -25,7 +25,6 @@ function App() {
       .then((response) => response.json())
       .then((json) => {
         setWeather(json);
-        console.log(json);
       });
   };
 
@@ -38,7 +37,6 @@ function App() {
       .then((response) => response.json())
       .then((json) => {
         setWeather(json);
-        console.log(json);
       });
   };
 
@@ -63,7 +61,6 @@ function App() {
         .then((response) => response.json())
         .then((json) => {
           setDaylyWeather(json);
-          console.log(json);
         });
     }
   }, [weather]);

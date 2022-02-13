@@ -8,7 +8,10 @@ header {
     #cityinput {
       width: 180px;
       height: 34px;
+      padding-left: 4px;
       box-sizing: border-box;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
 
       &:focus {
         outline: none;
@@ -21,6 +24,7 @@ header {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      border: none;
 
       &:hover {
         cursor: pointer;
@@ -50,5 +54,342 @@ header {
 
   .bold {
     font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 319px) {
+  header {
+    height: 70px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 135px;
+        height: 34px;
+        font-size: 10px;
+      }
+
+      #city-submit-button {
+        width: 60px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 45px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  header {
+    height: 70px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 165px;
+        height: 34px;
+        font-size: 11px;
+      }
+
+      #city-submit-button {
+        width: 65px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 11px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 45px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  header {
+    height: 70px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 230px;
+        height: 34px;
+        font-size: 12px;
+      }
+
+      #city-submit-button {
+        width: 80px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 12px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 45px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 70px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 380px;
+        height: 34px;
+        font-size: 14px;
+      }
+
+      #city-submit-button {
+        width: 100px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 45px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    height: 70px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 400px;
+        height: 34px;
+        font-size: 15px;
+      }
+
+      #city-submit-button {
+        width: 100px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 45px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  header {
+    height: 70px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 500px;
+        height: 34px;
+        font-size: 16px;
+      }
+
+      #city-submit-button {
+        width: 120px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 45px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  header {
+    height: 80px;
+    display: flex;
+
+    .cityinput-form {
+      #cityinput {
+        width: 700px;
+        height: 40px;
+        font-size: 18px;
+      }
+
+      #city-submit-button {
+        width: 150px;
+        height: 36px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 18px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .unitsChanger {
+      width: 60px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      box-sizing: border-box;
+      background: whitesmoke;
+      border: 1px solid black;
+      font-size: 18px;
+      border-radius: 5px;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
   }
 }

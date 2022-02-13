@@ -59,6 +59,7 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 5px;
       box-sizing: border-box;
       border: 1px solid white;
       border-radius: 5px;
@@ -84,7 +85,7 @@ main {
 
     .dayly-weather-item {
       width: 12.5%;
-      height: 160px;
+      height: 170px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -153,6 +154,724 @@ main {
         -webkit-user-select: none;
         user-select: none;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 319px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 100px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 85px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 60px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 110px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 85px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 100%;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 65px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 120px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 85px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 75px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 130px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 85px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 23.9%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 85px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 140px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 85px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 23.9%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 90px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 150px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 85px;
+        height: 25px;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 11.88%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 90px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  main {
+    .current-weather-container {
+      width: 100%;
+      padding: 5px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .current-weather-icon {
+        width: 200px;
+      }
+
+      .city-name-paragraph {
+        font-weight: bolder;
+        font-size: 20px;
+
+        .city-name {
+        }
+      }
+
+      .city-temp-paragraph {
+        font-size: 20px;
+
+        .city-temp {
+        }
+      }
+
+      .additionalinfo-paragraph {
+        font-size: 20px;
+
+        .additional-info {
+        }
+      }
+
+      .refresh-button {
+        width: 100px;
+        height: 28px;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 18px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .dayly-weather-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+
+      .dayly-weather-item {
+        width: 12.15%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: white;
+        font-size: 20px;
+
+        &:first-child {
+          .date {
+            background-color: #ff1744;
+          }
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid black;
+        }
+
+        .weather-icon {
+          width: 100px;
+        }
+
+        .temp {
+          width: 100%;
+
+          .day-temp {
+          }
+
+          .night-temp {
+          }
+        }
+
+        .humidity {
+        }
+
+        .description {
+          height: 20px;
+        }
       }
     }
   }
