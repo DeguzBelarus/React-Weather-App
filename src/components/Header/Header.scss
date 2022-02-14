@@ -1,8 +1,8 @@
 header {
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   .cityinput-form {
     #cityinput {
@@ -10,8 +10,8 @@ header {
       height: 34px;
       padding-left: 4px;
       box-sizing: border-box;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
 
       &:focus {
         outline: none;
@@ -20,11 +20,12 @@ header {
 
     #city-submit-button {
       width: 75px;
-      height: 34px;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      border: none;
+      border: 1px solid white;
+      background: #777;
+      color: white;
 
       &:hover {
         cursor: pointer;
@@ -59,13 +60,14 @@ header {
 
 @media screen and (min-width: 280px) and (max-width: 319px) {
   header {
-    height: 70px;
+    height: 45px;
     display: flex;
+    padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 135px;
-        height: 34px;
+        height: 33px;
         font-size: 10px;
       }
 
@@ -85,7 +87,8 @@ header {
 
     .unitsChanger {
       width: 45px;
-      height: 34px;
+      height: 32px;
+      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -107,13 +110,14 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
   header {
-    height: 70px;
+    height: 45px;
     display: flex;
+    padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 165px;
-        height: 34px;
+        height: 33px;
         font-size: 11px;
       }
 
@@ -133,7 +137,8 @@ header {
 
     .unitsChanger {
       width: 45px;
-      height: 34px;
+      height: 32px;
+      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -155,13 +160,14 @@ header {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   header {
-    height: 70px;
+    height: 45px;
     display: flex;
+    padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 230px;
-        height: 34px;
+        height: 33px;
         font-size: 12px;
       }
 
@@ -181,7 +187,8 @@ header {
 
     .unitsChanger {
       width: 45px;
-      height: 34px;
+      height: 32px;
+      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -203,13 +210,14 @@ header {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
-    height: 70px;
+    height: 45px;
     display: flex;
+    padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 380px;
-        height: 34px;
+        height: 33px;
         font-size: 14px;
       }
 
@@ -229,7 +237,8 @@ header {
 
     .unitsChanger {
       width: 45px;
-      height: 34px;
+      height: 32px;
+      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -251,13 +260,14 @@ header {
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   header {
-    height: 70px;
+    height: 45px;
     display: flex;
+    padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 400px;
-        height: 34px;
+        height: 33px;
         font-size: 15px;
       }
 
@@ -277,7 +287,8 @@ header {
 
     .unitsChanger {
       width: 45px;
-      height: 34px;
+      height: 32px;
+      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -299,13 +310,14 @@ header {
 
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   header {
-    height: 70px;
+    height: 45px;
     display: flex;
+    padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 500px;
-        height: 34px;
+        height: 33px;
         font-size: 16px;
       }
 
@@ -325,7 +337,8 @@ header {
 
     .unitsChanger {
       width: 45px;
-      height: 34px;
+      height: 32px;
+      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -347,8 +360,9 @@ header {
 
 @media screen and (min-width: 2560px) {
   header {
-    height: 80px;
+    height: 70px;
     display: flex;
+    padding-top: 30px;
 
     .cityinput-form {
       #cityinput {
