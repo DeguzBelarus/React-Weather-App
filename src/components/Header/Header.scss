@@ -8,8 +8,9 @@ header {
     #cityinput {
       width: 180px;
       height: 34px;
-      padding-left: 4px;
+      padding-left: 7px;
       box-sizing: border-box;
+      border: none;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
 
@@ -60,14 +61,14 @@ header {
 
 @media screen and (min-width: 280px) and (max-width: 319px) {
   header {
-    height: 45px;
+    height: 40px;
     display: flex;
     padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 135px;
-        height: 33px;
+        height: 30px;
         font-size: 10px;
       }
 
@@ -88,14 +89,13 @@ header {
     .unitsChanger {
       width: 45px;
       height: 32px;
-      margin-top: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: -1px;
       margin-left: 5px;
       box-sizing: border-box;
       background: whitesmoke;
-      border: 1px solid black;
       border-radius: 5px;
       -ms-user-select: none;
       -webkit-user-select: none;
@@ -110,14 +110,14 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
   header {
-    height: 45px;
+    height: 40px;
     display: flex;
     padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 165px;
-        height: 33px;
+        height: 30px;
         font-size: 11px;
       }
 
@@ -138,7 +138,7 @@ header {
     .unitsChanger {
       width: 45px;
       height: 32px;
-      margin-top: 1px;
+      margin-top: -1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -160,14 +160,14 @@ header {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   header {
-    height: 45px;
+    height: 40px;
     display: flex;
     padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 230px;
-        height: 33px;
+        height: 30px;
         font-size: 12px;
       }
 
@@ -188,7 +188,7 @@ header {
     .unitsChanger {
       width: 45px;
       height: 32px;
-      margin-top: 1px;
+      margin-top: -1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -210,14 +210,14 @@ header {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
-    height: 45px;
+    height: 40px;
     display: flex;
     padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 380px;
-        height: 33px;
+        height: 30px;
         font-size: 14px;
       }
 
@@ -238,7 +238,7 @@ header {
     .unitsChanger {
       width: 45px;
       height: 32px;
-      margin-top: 1px;
+      margin-top: -1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -260,14 +260,14 @@ header {
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   header {
-    height: 45px;
+    height: 40px;
     display: flex;
     padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 400px;
-        height: 33px;
+        height: 30px;
         font-size: 15px;
       }
 
@@ -288,7 +288,7 @@ header {
     .unitsChanger {
       width: 45px;
       height: 32px;
-      margin-top: 1px;
+      margin-top: -1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -310,14 +310,14 @@ header {
 
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   header {
-    height: 45px;
+    height: 40px;
     display: flex;
     padding-top: 10px;
 
     .cityinput-form {
       #cityinput {
         width: 500px;
-        height: 33px;
+        height: 30px;
         font-size: 16px;
       }
 
@@ -338,7 +338,7 @@ header {
     .unitsChanger {
       width: 45px;
       height: 32px;
-      margin-top: 1px;
+      margin-top: -1px;
       display: flex;
       justify-content: center;
       align-items: center;
