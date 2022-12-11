@@ -15,8 +15,7 @@
     "web-vitals": "^3.1.0"
   },
   "engines": {
-    "node": "16.17.1",
-    "yarn": "1.22.19"
+    "node": "16.17.1"
   },
   "scripts": {
     "start": "react-scripts start",
